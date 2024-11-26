@@ -1,4 +1,3 @@
-/* Center the page content */
 body {
     display: flex;
     justify-content: center;
@@ -9,14 +8,14 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  /* Wheel container */
+  
   .wheel-container {
     width: 200px;
     height: 200px;
     position: relative;
   }
   
-  /* The wheel with multiple colors */
+  
   .wheel {
     width: 100%;
     height: 100%;
@@ -30,7 +29,7 @@ body {
       #9b59b6 300deg, 
       #e74c3c 360deg
     );
-    transform: rotate(0deg); /* Start stationary */
-    transition: transform 1s ease-out; /* Smooth reset to original position */
+    transform: rotate(0deg); 
+    transition: transform 1s ease-out; 
   }
   
