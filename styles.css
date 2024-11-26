@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    font-family: Arial, sans-serif;
+  }
+  
+  .wheel-container {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+  
+  .wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+      #e74c3c 0deg, 
+      #f39c12 60deg, 
+      #f1c40f 120deg, 
+      #2ecc71 180deg, 
+      #3498db 240deg, 
+      #9b59b6 300deg, 
+      #e74c3c 360deg
+    );
+    transform: rotate(0deg); 
+    transition: transform 0.2s ease; 
+  }
+  
+  .wheel-container:hover .wheel {
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
